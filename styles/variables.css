@@ -1,15 +1,14 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --accent__color: #000000;
-  --main__font: 'Inter-Variable', sans-serif;
-  --accent__font: 'PressStart2P', fantasy;
-  --card__header__font-weight: 700;
-  --card__text__font-weight: 400;
-  --block__width: clamp(375px, 100vw, 700px);
-  --header__height: clamp(327px, 38.1vh, 50vh);
-  --header__font-size: clamp(3.0625rem, 2.6966rem + 1.561vw, 4.0625rem);
-  --header__text__font-size: clamp(0.875rem, 0.6692rem + 0.878vw, 1.4375rem);
-  --bg__image:
+  --color-accent: #000000;
+  --font-main: 'Inter-Variable', sans-serif;
+  --font-accent: 'PressStart2P', fantasy;
+  --font-weight-header: 700;
+  --font-weight-text: 400;
+  --width-container: clamp(375px, 100vw, 700px);
+  --height-header: clamp(327px, 38.1vh, 50vh);
+  --font-size-title: clamp(3.0625rem, 2.6966rem + 1.561vw, 4.0625rem);
+  --font-size-subtitle: clamp(0.875rem, 0.6692rem + 0.878vw, 1.4375rem);
+  --background-image:
     repeating-linear-gradient(
       to right,
       #d3d3d3,
@@ -30,8 +29,8 @@
       #1a1a1a 100%
     );
 
-    --contour__color: black;
-    --core__color: none;
-    --main__body__color: none;
-    --sparks__color: none;
+  --heart-contour: black;
+  --heart-core: none;
+  --heart-body: none;
+  --heart-sparks: none;
 }
