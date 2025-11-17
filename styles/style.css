@@ -59,12 +59,29 @@
   position: relative;
 }
 
-.filter__greyscale { filter: grayscale(50%); }
-.filter__invert { filter: invert(100%); }
-.filter__sepia { filter: sepia(50%); }
-.filter__saturate { filter: saturate(120%); }
-.filter__brightness { filter: brightness(90%); }
-.filter__greyscale__blur { filter: grayscale(100%) blur(3px); }
+.filter__greyscale {
+  filter: grayscale(50%);
+}
+
+.filter__invert {
+  filter: invert(100%);
+}
+
+.filter__sepia {
+  filter: sepia(50%);
+}
+
+.filter__saturate {
+  filter: saturate(120%);
+}
+
+.filter__brightness {
+  filter: brightness(90%);
+}
+
+.filter__greyscale__blur {
+  filter: grayscale(100%) blur(3px);
+}
 
 .card__image {
   object-fit: cover;
@@ -92,8 +109,14 @@
   }
 }
 
-.card__text__container { margin: 25px; }
-.card__text:last-child { margin-top: 27px; }
+.card__text__container {
+  margin: 25px;
+}
+
+.card__text:last-child {
+  margin-top: 27px;
+}
+
 .card__text {
   width: 100%;
   font-size: 18px;
@@ -133,9 +156,15 @@ svg {
   --heart-body: white;
 }
 
-.heart { transform-origin: center; }
-.like-icon { overflow: visible; }
-.sparks { 
+.heart {
+  transform-origin: center;
+}
+
+.like-icon {
+  overflow: visible;
+}
+
+.sparks {
   fill: white;
   transform-origin: center;
 }
@@ -148,6 +177,7 @@ svg {
 .card__icon-button:not(:hover) .core {
   transition: fill 0.3s linear 0.03s;
 }
+
 .card__icon-button:not(:hover) .main-body {
   transition: fill 0.3s linear;
 }
@@ -156,6 +186,7 @@ svg {
   --heart-body: #FF0000;
   fill: var(--heart-body);
 }
+
 .card__icon-button:active .core {
   --heart-core: #FF0000;
   fill: var(--heart-core);
@@ -165,10 +196,12 @@ svg {
   --heart-body: #FF0000;
   fill: var(--heart-body);
 }
+
 .like-icon.is-liked .core {
   --heart-core: #FF0000;
   fill: var(--heart-core);
 }
+
 .like-icon.is-liked .contour {
   transition: fill 0.3s linear 0.06s;
   --heart-contour: #FF0000;
@@ -179,6 +212,7 @@ svg {
 .is-liked .sparks {
   animation: scale-up 0.3s ease-in 0.1s 1;
 }
+
 .is-liked .sparks {
   animation: spark-animate 0.3s ease-in 0.3s 1;
 }
@@ -232,7 +266,9 @@ svg {
   transform: scaleX(1);
 }
 
-.button:hover { cursor: pointer; }
+.button:hover {
+  cursor: pointer;
+}
 
 .button:focus {
   outline: none;
@@ -314,17 +350,29 @@ dialog::backdrop {
 }
 
 @media (width <= 375px) {
-  .card { width: 100vw; }
+  .card {
+    width: 100vw;
+  }
   
-  .header { justify-content: unset; }
+  .header {
+    justify-content: unset;
+  }
   
-  .header__container { min-block-size: 327px; }
+  .header__container {
+    min-block-size: 327px;
+  }
   
-  .card__image__label { right: 10px; }
+  .card__image__label {
+    right: 10px;
+  }
   
-  .card__text__container { max-inline-size: 321px; }
+  .card__text__container {
+    max-inline-size: 321px;
+  }
   
-  .card__text { text-wrap: wrap; }
+  .card__text {
+    text-wrap: wrap;
+  }
 
   .save__button {
     flex-direction: column;
